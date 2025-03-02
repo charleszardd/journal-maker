@@ -1,5 +1,5 @@
 <template>
-    <v-col cols="12" md="8" lg="6" class="my-4">
+    <v-col cols="12" md="8" lg="5" class="my-4">
       <v-card
         v-for="journal in journals"
         :key="journal.id"
