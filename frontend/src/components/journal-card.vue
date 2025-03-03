@@ -3,7 +3,7 @@
       <v-card
         v-for="journal in journals"
         :key="journal.id"
-        class="bg-grey-lighten-4 rounded-lg main-font my-4"
+        class="bg-grey-lighten-4 rounded-lg main-font mt-10"
         elevation="5"
         max-width="600"
       >
