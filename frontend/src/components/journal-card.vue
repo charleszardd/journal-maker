@@ -10,8 +10,11 @@
       <v-col class="px-0">
         <v-row class="d-flex justify-space-between px-8 py-6" align="center">
           <div class="d-flex">
-            <v-avatar>
-              <v-img :src="journal.profile_image" />
+            <v-avatar v-if="journal.profile_image">
+              <v-img  :src="journal.profile_image" />
+            </v-avatar>
+            <v-avatar class="bg-grey-lighten-1" v-else>
+              <v-icon class="text-grey-darken-2">mdi-account</v-icon>
             </v-avatar>
             <v-col class="py-0 px-0">
               <v-card-title>{{ journal.name }}</v-card-title>
@@ -62,7 +65,7 @@
 
     <v-dialog v-model="isEditDialogOpen" max-width="500px">
       <v-card>
-        <v-card-title>Edit Journal</v-card-title>
+        <v-card-title class="text-center">Edit Journal</v-card-title>
         <v-card-text>
           <v-file-input v-model="editedJournal.profile_image" :prepend-icon="false" label="Your profile image"></v-file-input>
           <v-text-field v-model="editedJournal.name" label="Your name"></v-text-field>

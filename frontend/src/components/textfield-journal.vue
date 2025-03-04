@@ -9,7 +9,7 @@
       <v-row justify="center" align="center">
         <v-col cols="12" class="d-flex align-center justify-center">
           <v-avatar color="#212121" class="mr-3">
-            <v-icon class="text-white">mdi-robot</v-icon>
+            <v-icon class="text-white">mdi-account</v-icon>
           </v-avatar>
 
           <v-text-field
