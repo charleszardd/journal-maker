@@ -10,10 +10,10 @@
   
       <v-spacer></v-spacer>
   
-      <div class="d-none d-md-flex">
+      <!-- <div class="d-none d-md-flex">
         <Button height="45" variant="outlined" to="/create-recipe" class="font-weight-bold rounded-lg">Create Journal</Button>
       </div>
-  
+   -->
       <v-btn icon class="d-md-none" @click="drawer = !drawer">
         <v-icon class="text-white">mdi-menu</v-icon>
       </v-btn>

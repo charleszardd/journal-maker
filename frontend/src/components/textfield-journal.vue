@@ -90,16 +90,20 @@ const createJournal = async () => {
       formData.append("content_image", newJournal.value.content_image);
     }
 
-    const response = await axios.post("/api/journals/", formData, {
+    await axios.post("/api/journals/", formData, {
       headers: {
         "Content-Type": "multipart/form-data",
       },
     });
 
-    isModalOpen.value = false;
-    newJournal.value = { name: "", content: "", profile_image: null, content_image: null };
+    setTimeout(()=> {
+      alert('Creation successful!')
+      window.location.reload(); 
+    }, 1500)
+
   } catch (error) {
     console.error("Failed to create journal:", error);
   }
 };
+
 </script>
